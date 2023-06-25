@@ -1,0 +1,18 @@
+[package]
+name = "tokio_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.61"
+tokio = {version = "1.24.0", features = ["full"]}
+tokio-stream = "0.1.11"
+tonic = "0.9.0"
+log = "0.4.17"
+prost = "0.11.9"
+mio = "0.8"
+
+[build-dependencies]
+tonic-build = "0.9.0"
